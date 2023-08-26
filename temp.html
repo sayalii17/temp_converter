@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Temp Converter</title>
+	<link rel="stylesheet" type="text/css" href="temp_style.css">
+
+	<!-- box icons -->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="container">
+		<div class="temp_con">
+			<h2 class="title">Tenperature Converter</h2>
+		
+
+		<div class="res">
+			<h2 class="val" id="val"></h2>
+		</div>
+
+		<div class="res">
+			<h2 class="val" id="val1"></h2>
+		</div>
+
+		<div class="deg-type">
+			<div class="deg-field">
+				<label>Degree: </label>
+				<input type="number" name="deg" id="degree" oninvalid="alert('Enter Numeric data only!!');"> 
+			</div>
+
+			<div class="temp-field">
+				<label>Type: </label><br>
+				
+				<div id="temp-type">
+				<input type="radio" name="celsius" value="celsius" id="cel">
+				<label>Celsius</label><br>
+				
+				<input type="radio" name="Fahrenheit" value="Fahrenheit" id="fahr">
+				<label>Fahrenheit</label><br>
+				
+				<input type="radio" name="kelvin" value="Kelvin" id="kel">
+				<label>Kelvin</label><br>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<button id="convert-Btn" onclick="checkButton()"> Convert</button>
+		</div>
+
+</div>
+	</div>
+
+	<script type="text/javascript" src="temp_script.js"></script>
+
+</body>
+</html>
